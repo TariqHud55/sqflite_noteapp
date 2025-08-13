@@ -1,0 +1,246 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.sqflite_noteapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->I:\flutter_projects\sqflite_noteapp\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->I:\flutter_projects\sqflite_noteapp\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:2:1-75
+16-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:2:18-73
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:3:1-76
+17-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:3:18-74
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:4:1-60
+18-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:4:18-58
+19    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+19-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:5:1-71
+19-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:5:18-69
+20    <!--
+21 Required to query activities that can process text, see:
+22         https://developer.android.com/training/package-visibility and
+23         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+24
+25         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+26    -->
+27    <queries>
+27-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:53:5-58:15
+28        <intent>
+28-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:54:9-57:18
+29            <action android:name="android.intent.action.PROCESS_TEXT" />
+29-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:55:13-72
+29-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:55:21-70
+30
+31            <data android:mimeType="text/plain" />
+31-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:56:13-50
+31-->I:\flutter_projects\sqflite_noteapp\android\app\src\main\AndroidManifest.xml:56:19-48
+32        </intent>
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+35-->[:local_auth_android] I:\flutter_projects\sqflite_noteapp\build\local_auth_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-72
+35-->[:local_auth_android] I:\flutter_projects\sqflite_noteapp\build\local_auth_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-69
+36    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+36-->[androidx.biometric:biometric:1.1.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\bd1be39a4121b41df3cecdb1f1acb24d\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
+36-->[androidx.biometric:biometric:1.1.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\bd1be39a4121b41df3cecdb1f1acb24d\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
+37
+38    <permission
+38-->[androidx.core:core:1.13.1] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\8cf478dec41eed746328fa8046755ba2\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+39        android:name="com.example.sqflite_noteapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+39-->[androidx.core:core:1.13.1] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\8cf478dec41eed746328fa8046755ba2\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+40        android:protectionLevel="signature" />
+40-->[androidx.core:core:1.13.1] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\8cf478dec41eed746328fa8046755ba2\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+41
+42    <uses-permission android:name="com.example.sqflite_noteapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+42-->[androidx.core:core:1.13.1] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\8cf478dec41eed746328fa8046755ba2\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+42-->[androidx.core:core:1.13.1] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\8cf478dec41eed746328fa8046755ba2\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+43
+44    <application
+45        android:name="android.app.Application"
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.13.1] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\8cf478dec41eed746328fa8046755ba2\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+47        android:debuggable="true"
+48        android:extractNativeLibs="true"
+49        android:icon="@mipmap/ic_launcher"
+50        android:label="MyNote" >
+51        <activity
+52            android:name="com.example.sqflite_noteapp.MainActivity"
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54            android:exported="true"
+55            android:hardwareAccelerated="true"
+56            android:launchMode="singleTop"
+57            android:taskAffinity=""
+58            android:theme="@style/LaunchTheme"
+59            android:windowSoftInputMode="adjustResize" >
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+68                android:name="io.flutter.embedding.android.NormalTheme"
+69                android:resource="@style/NormalTheme" />
+70
+71            <intent-filter>
+72                <action android:name="android.intent.action.MAIN" />
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+82            android:name="flutterEmbedding"
+83            android:value="2" />
+84
+85        <provider
+86            android:name="androidx.core.content.FileProvider"
+87            android:authorities="com.example.sqflite_noteapp.fileprovider"
+88            android:exported="false"
+89            android:grantUriPermissions="true" >
+90            <meta-data
+90-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-16:75
+91                android:name="android.support.FILE_PROVIDER_PATHS"
+91-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-67
+92                android:resource="@xml/file_paths" />
+92-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:17-72
+93        </provider>
+94        <provider
+94-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-17:20
+95            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+95-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-82
+96            android:authorities="com.example.sqflite_noteapp.flutter.image_provider"
+96-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-74
+97            android:exported="false"
+97-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-37
+98            android:grantUriPermissions="true" >
+98-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-47
+99            <meta-data
+99-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-16:75
+100                android:name="android.support.FILE_PROVIDER_PATHS"
+100-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-67
+101                android:resource="@xml/flutter_image_picker_file_paths" />
+101-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:17-72
+102        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+103        <service
+103-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-31:19
+104            android:name="com.google.android.gms.metadata.ModuleDependencies"
+104-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-78
+105            android:enabled="false"
+105-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-36
+106            android:exported="false" >
+106-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-37
+107            <intent-filter>
+107-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-26:29
+108                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+108-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:17-94
+108-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:25-91
+109            </intent-filter>
+110
+111            <meta-data
+111-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-30:36
+112                android:name="photopicker_activity:0:required"
+112-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-63
+113                android:value="" />
+113-->[:image_picker_android] I:\flutter_projects\sqflite_noteapp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-33
+114        </service>
+115
+116        <activity
+116-->[:url_launcher_android] I:\flutter_projects\sqflite_noteapp\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-11:74
+117            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+117-->[:url_launcher_android] I:\flutter_projects\sqflite_noteapp\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-74
+118            android:exported="false"
+118-->[:url_launcher_android] I:\flutter_projects\sqflite_noteapp\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-37
+119            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+119-->[:url_launcher_android] I:\flutter_projects\sqflite_noteapp\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-71
+120
+121        <uses-library
+121-->[androidx.window:window:1.2.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\5093ab42d2307deb2d7ac0b7f5718c38\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+122            android:name="androidx.window.extensions"
+122-->[androidx.window:window:1.2.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\5093ab42d2307deb2d7ac0b7f5718c38\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+123            android:required="false" />
+123-->[androidx.window:window:1.2.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\5093ab42d2307deb2d7ac0b7f5718c38\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+124        <uses-library
+124-->[androidx.window:window:1.2.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\5093ab42d2307deb2d7ac0b7f5718c38\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+125            android:name="androidx.window.sidecar"
+125-->[androidx.window:window:1.2.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\5093ab42d2307deb2d7ac0b7f5718c38\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+126            android:required="false" />
+126-->[androidx.window:window:1.2.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\5093ab42d2307deb2d7ac0b7f5718c38\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+127
+128        <provider
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\e80aa748ff6540407d8dba61c0d945fe\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+129            android:name="androidx.startup.InitializationProvider"
+129-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\e80aa748ff6540407d8dba61c0d945fe\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+130            android:authorities="com.example.sqflite_noteapp.androidx-startup"
+130-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\e80aa748ff6540407d8dba61c0d945fe\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+131            android:exported="false" >
+131-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\e80aa748ff6540407d8dba61c0d945fe\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+132            <meta-data
+132-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\e80aa748ff6540407d8dba61c0d945fe\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+133                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+133-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\e80aa748ff6540407d8dba61c0d945fe\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+134                android:value="androidx.startup" />
+134-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\e80aa748ff6540407d8dba61c0d945fe\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+135            <meta-data
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+136                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+137                android:value="androidx.startup" />
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+138        </provider>
+139
+140        <receiver
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+141            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+142            android:directBootAware="false"
+142-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+143            android:enabled="true"
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+144            android:exported="true"
+144-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+145            android:permission="android.permission.DUMP" >
+145-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+147                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+150                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+151            </intent-filter>
+152            <intent-filter>
+152-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+153                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+153-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+153-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+154            </intent-filter>
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+156                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TOSHIBA\.gradle\caches\8.10.2\transforms\4051a23600791cfac099a18cb55e807e\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+157            </intent-filter>
+158        </receiver>
+159    </application>
+160
+161</manifest>

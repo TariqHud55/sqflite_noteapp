@@ -1,0 +1,1 @@
+ I:\\flutter_projects\\sqflite_noteapp\\.dart_tool\\flutter_build\\fb9e7b81d8252c847e10b77ddbf57da9\\native_assets.json: 
